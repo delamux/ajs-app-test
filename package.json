@@ -24,6 +24,9 @@
   "homepage": "https://github.com/delamux/ajs-app-test#readme",
   "dependencies": {
     "angular": "^1.7.8",
+    "colors": "^1.3.3",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
     "install": "^0.13.0",
     "lodash": "^4.17.15",
     "mysql": "github:mysqljs/mysql",
