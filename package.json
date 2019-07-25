@@ -24,6 +24,9 @@
   "dependencies": {
     "angular": "^1.7.8",
     "install": "^0.13.0",
-    "npm": "^6.10.2"
+    "lodash": "^4.17.15",
+    "mysql": "github:mysqljs/mysql",
+    "npm": "^6.10.2",
+    "shape-json": "^1.2.4"
   }
 }
