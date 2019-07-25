@@ -4,7 +4,8 @@
   "description": "AngularJS App Test with node and mysql",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "install": "^0.13.0",
     "lodash": "^4.17.15",
     "mysql": "github:mysqljs/mysql",
+    "nodemon": "^1.19.1",
     "npm": "^6.10.2",
     "shape-json": "^1.2.4"
   }
