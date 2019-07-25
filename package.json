@@ -1,0 +1,24 @@
+{
+  "name": "ajs-app-test",
+  "version": "1.0.0",
+  "description": "AngularJS App Test with node and mysql",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delamux/ajs-app-test.git"
+  },
+  "keywords": [
+    "node",
+    "angularjs",
+    "mysql"
+  ],
+  "author": "Luis del Amo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/delamux/ajs-app-test/issues"
+  },
+  "homepage": "https://github.com/delamux/ajs-app-test#readme"
+}
