@@ -1,17 +1,17 @@
-app.controller('mainCtrl', function($scope) {
-    $scope.user = user;
-    $scope.updating = {};
+app.controller('mainCtrl', function() {
+    this.user = user;
+    this.updating = {};
 
-    $scope.update = function () {
-        angular.copy($scope.user, $scope.updating);
+    this.update = function () {
+        angular.copy(this.user, this.updating);
     };
 
-    $scope.save = function () {
-        angular.copy($scope.updating, $scope.user);
+    this.save = function () {
+        angular.copy(this.updating, this.user);
     };
 
-    $scope.cancel = function () {
-        $scope.updating = {};
+    this.cancel = function () {
+        this.updating = {};
     }
 });
 

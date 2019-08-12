@@ -9,38 +9,38 @@
 </head>
 <body>
 
-<div class="container" ng-controller="mainCtrl">
+<div class="container" ng-controller="mainCtrl as main">
     <h1>Welcome to App test</h1>
     <div class="row">
         <div class="col-6">
             <div class="card" style="width: 18rem;">
-                <img class="card-img-top" ng-src="{{ user.photo }}" alt="Card image cap">
+                <img class="card-img-top" ng-src="{{ main.user.photo }}" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title">User</h5>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">{{ user.name }} {{ user.last_name}}</li>
-                    <li class="list-group-item">{{ user.age }}</li>
+                    <li class="list-group-item">{{ main.user.name }} {{ main.user.last_name}}</li>
+                    <li class="list-group-item">{{ main.user.age }}</li>
                 </ul>
-                <button type="button" class="btn btn-warning" ng-click="update()">Edit</button>
+                <button type="button" class="btn btn-warning" ng-click="main.update()">Edit</button>
             </div>
         </div>
         <div class="col-6">
             <form>
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" class="form-control" ng-model="updating.name" id="name" placeholder="Name">
+                    <input type="text" class="form-control" ng-model="main.updating.name" id="name" placeholder="Name">
                 </div>
                 <div class="form-group">
                     <label for="last-name">Last name:</label>
-                    <input type="text" class="form-control" ng-model="updating.last_name" id="last-name" placeholder="Last Name">
+                    <input type="text" class="form-control" ng-model="main.updating.last_name" id="last-name" placeholder="Last Name">
                 </div>
                 <div class="form-group">
                     <label for="age">Age:</label>
-                    <input type="number" class="form-control" ng-model="updating.age" id="age" placeholder="Age">
+                    <input type="number" class="form-control" ng-model="main.updating.age" id="age" placeholder="Age">
                 </div>
-                <button type="button" class="btn btn-success" ng-click="save()">Save</button>
-                <button type="button" class="btn btn-danger" ng-click="cancel()">Cancel</button>
+                <button type="button" class="btn btn-success" ng-click="main.save()">Save</button>
+                <button type="button" class="btn btn-danger" ng-click="main.cancel()">Cancel</button>
             </form>
         </div>
     </div>
