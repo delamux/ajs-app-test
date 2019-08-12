@@ -1,5 +1,6 @@
 require('./config');
 const express = require('express');
+const bodyParser = require('body-parser');
 const mysql = require('mysql');
 const colors = require('colors');
 const shape = require('shape-json');
@@ -7,6 +8,12 @@ const path = require('path');
 const routes = require('./app/app.routes');
 const app = express();
 
+//Index
+app.use(express.static(path.resolve(__dirname)));
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+// Routes
 app.use(routes);
 
 const connection = mysql.createConnection({
