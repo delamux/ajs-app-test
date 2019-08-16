@@ -30,7 +30,6 @@ connection.connect((err) => {
     let threadId = connection.threadId.toString().cyan;
     console.log('connected as id ' + threadId);
 });
-
 connection.end();
 app.listen(process.env.PORT, () => {
     let port = (process.env.PORT).toString().yellow;
