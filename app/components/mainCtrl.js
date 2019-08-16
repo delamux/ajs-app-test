@@ -1,19 +1,25 @@
-app.controller('mainCtrl', function() {
-    this.user = user;
-    this.updating = {};
+app.controller('mainCtrl', ['$http', function($http) {
+    const vm = this;
+    vm.user = user;
+    vm.updating = {};
+    vm.users = [];
 
-    this.update = function () {
+    vm.update = function () {
         angular.copy(this.user, this.updating);
     };
 
-    this.save = function () {
-        angular.copy(this.updating, this.user);
+    vm.save = function () {
+        angular.copy(vm.updating, vm.user);
     };
 
-    this.cancel = function () {
-        this.updating = {};
-    }
-});
+    vm.cancel = function () {
+        vm.updating = {};
+    };
+    $http.get('https://jsonplaceholder.typicode.com/users')
+        .then((data) => {
+            vm.users = data.data
+        });
+}]);
 
 const user = {
     name: 'Peter',

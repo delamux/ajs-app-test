@@ -5,7 +5,6 @@ const mysql = require('mysql');
 const colors = require('colors');
 const shape = require('shape-json');
 const path = require('path');
-const routes = require('./app/app.routes');
 const app = express();
 
 //Index
@@ -14,7 +13,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // Routes
-app.use(routes);
+app.use(require('./app/api.routes'));
 
 const connection = mysql.createConnection({
     host     : process.env.DB_HOST,
