@@ -1,0 +1,25 @@
+<div ng-controller="userCtrl as user">
+    <h1>Users list</h1>
+    <div class="row">
+        <div class="col-12">
+            <table class="table">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Last name</th>
+                    <th scope="col">Age</th>
+                </tr>
+                </thead>
+                <tbody ng-repeat="user in user.users">
+                <tr>
+                    <th scope="row">{{ user.id }}</th>
+                    <td>{{ user.name }}</td>
+                    <td>{{ user.last_name }}</td>
+                    <td>{{ user.age }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

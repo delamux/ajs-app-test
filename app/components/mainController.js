@@ -1,18 +1,4 @@
-app.controller('mainCtrl', ['$http', function($http) {
+app.controller('mainCtrl', function() {
     const vm = this;
-    vm.user = user;
-    vm.updating = {};
-    vm.users = [];
-
-    vm.update = function () {
-        angular.copy(this.user, this.updating);
-    };
-
-    vm.save = function () {
-        angular.copy(vm.updating, vm.user);
-    };
-
-    vm.cancel = function () {
-        vm.updating = {};
-    };
-}]);
+    vm.topMenu = 'app/shared/topMenu/topMenuView.html'
+});
