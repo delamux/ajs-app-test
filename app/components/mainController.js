@@ -1,8 +1,10 @@
-app.controller('mainCtrl', function() {
+app.controller('mainCtrl',['$location', function($location) {
     const vm = this;
     vm.topMenu = 'app/shared/topMenu/topMenuView.html';
 
     vm.getClass = function (path) {
-        return ($location.path().substr(0, path.length) === path) ? 'active' : '';
+        let rootClass = 'nav-item';
+
+        return ($location.path().substr(0, path.length) === path) ? `${rootClass} active` : rootClass;
     }
-});
+}]);
