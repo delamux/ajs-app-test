@@ -7,6 +7,9 @@ app.config(function ($routeProvider) {
         .when('/users', {
             templateUrl: `${componentsUrl}/user/userView.html`
         })
+        .when('/users/add', {
+            templateUrl: `${componentsUrl}/user/addUserView.html`,
+        })
         .otherwise({
             redirectTo: '/'
         })

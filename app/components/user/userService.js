@@ -13,4 +13,24 @@ app.get('/api/users', function (req, res) {
     });
 });
 
+app.post('/api/users/add', function (req, res) {
+    console.log(req.body);
+    dbConnection.query('INSERT INTO users SET ?', req.body, function (error, results, fields) {
+        if (error) {
+            return res.status(400).json({
+                ok: false,
+                error: {
+                    message: 'error to save data'
+                }
+            })
+        }
+
+        res.json({
+            ok: true,
+            category: results
+        })
+    });
+
+});
+
 module.exports = app;

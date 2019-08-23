@@ -1,0 +1,19 @@
+<div class="row mt-5">
+    <div class="col-12">
+        <form ng-submit="user.addNewUser()" ng-controller="userCtrl as user">
+            <div class="form-group">
+                <label for="first-name">Name</label>
+                <input type="text" ng-model="user.first_name" class="form-control" id="first-name" placeholder="Enter your fist name">
+            </div>
+            <div class="form-group">
+                <label for="last-name">Last name</label>
+                <input type="text" ng-model="user.last_name" class="form-control" id="last-name" placeholder="Enter your last name">
+            </div>
+            <div class="form-group">
+                <label for="age">Age</label>
+                <input type="number" ng-model="user.age" class="form-control" id="age" placeholder="Your age">
+            </div>
+            <button class="btn btn-primary" type="submit" id="submit">Save</button>
+        </form>
+    </div>
+</div>
