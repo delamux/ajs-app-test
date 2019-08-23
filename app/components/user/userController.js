@@ -19,7 +19,7 @@ app.controller('userCtrl', ['$http', '$route', function($http, $route) {
             last_name: vm.last_name,
             age: vm.age,
         }).then((data) => {
-                console.log(data);
-            });
+            console.log(data);
+        });
     }
 }]);
