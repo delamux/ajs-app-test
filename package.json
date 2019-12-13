@@ -37,7 +37,7 @@
     "lodash": "^4.17.15",
     "mysql": "github:mysqljs/mysql",
     "nodemon": "^1.19.1",
-    "npm": "^6.10.3",
+    "npm": "^6.13.4",
     "popper.js": "^1.15.0",
     "shape-json": "^1.2.4"
   }
