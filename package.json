@@ -33,7 +33,7 @@
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
     "install": "^0.13.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lodash": "^4.17.15",
     "mysql": "github:mysqljs/mysql",
     "nodemon": "^1.19.1",
